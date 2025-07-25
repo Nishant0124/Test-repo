@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.toggle('active');
     toggle.classList.toggle('rotate');
   });
+  function initVantaWhenReady() {
+    if (typeof VANTA === 'undefined' || typeof VANTA.DOTS !== 'function') {
+      console.log("Waiting for VANTA to be ready...");
+      return setTimeout(initVantaWhenReady, 100);
+    }
   VANTA.DOTS({
     el: "#vanta-bg",
     mouseControls: true,
