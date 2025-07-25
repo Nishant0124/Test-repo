@@ -22,21 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.toggle('active');
     toggle.classList.toggle('rotate');
   });
-/*  VANTA.DOTS({
-    el: "#vanta-bg",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: 0x6900ff,
-    color2: 0x20ceff,
-    backgroundColor: 0x171717,
-    size: 3.10,
-    spacing: 34.00
-  });*/
+});
+tsParticles.load("tsparticles", {
+  particles: {
+    number: { value: 80 },
+    color: { value: "#ffffff" },
+    links: { enable: true, color: "#ffffff" },
+    move: { enable: true, speed: 2 },
+    size: { value: 3 },
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" }
+    }
+  },
+  background: { color: "#0d0d0d" }
 });
 
 const faders = document.querySelectorAll('.fade-in');
