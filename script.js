@@ -22,12 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.toggle('active');
     toggle.classList.toggle('rotate');
   });
-  function initVantaWhenReady() {
-    if (typeof VANTA === 'undefined' || typeof VANTA.DOTS !== 'function') {
-      console.log("Waiting for VANTA to be ready...");
-      return setTimeout(initVantaWhenReady, 100);
-    }
-  VANTA.DOTS({
+/*  VANTA.DOTS({
     el: "#vanta-bg",
     mouseControls: true,
     touchControls: true,
@@ -41,10 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     backgroundColor: 0x171717,
     size: 3.10,
     spacing: 34.00
-  });
-  }
-
-  initVantaWhenReady();
+  });*/
 });
 
 const faders = document.querySelectorAll('.fade-in');
