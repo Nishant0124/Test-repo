@@ -147,6 +147,7 @@
   <script src="three.r134.min.js"></script>
   <script src="vanta.dots.min.js"></script>
   <script>
+  document.addEventListener("DOMContentLoaded", () => {
   VANTA.DOTS({
     el: "#your-element-selector",
     mouseControls: true,
@@ -161,7 +162,8 @@
     backgroundColor: 0x171717,
     size: 3.10,
     spacing: 34.00
-  })
+  });
+  });
   </script>
   <script src="script.js" defer></script>
 </body>
