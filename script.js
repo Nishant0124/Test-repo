@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.toggle('active');
     toggle.classList.toggle('rotate');
   });
-
-  // Vanta animated background
+/*  // Vanta animated background
   VANTA.NET({
     el: "#vanta-bg",
     mouseControls: true,
@@ -34,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scaleMobile: 1.0,
     color: 0x4b2e83,
     backgroundColor: 0x151515
-  });
+  });*/
 });
 
 const faders = document.querySelectorAll('.fade-in');
