@@ -22,18 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
     navbar.classList.toggle('active');
     toggle.classList.toggle('rotate');
   });
-/*  // Vanta animated background
-  VANTA.NET({
+  VANTA.DOTS({
     el: "#vanta-bg",
     mouseControls: true,
     touchControls: true,
+    gyroControls: false,
     minHeight: 200.00,
     minWidth: 200.00,
-    scale: 1.0,
-    scaleMobile: 1.0,
-    color: 0x4b2e83,
-    backgroundColor: 0x151515
-  });*/
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x6900ff,
+    color2: 0x20ceff,
+    backgroundColor: 0x171717,
+    size: 3.10,
+    spacing: 34.00
+  });
 });
 
 const faders = document.querySelectorAll('.fade-in');
