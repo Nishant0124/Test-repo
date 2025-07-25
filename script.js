@@ -10,18 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Theme Toggle with localStorage
   const themeToggle = document.getElementById('theme-toggle');
-  const currentTheme = localStorage.getItem('theme');
-
-  if (currentTheme === 'light') {
-  document.body.classList.add('light-mode');
-  themeToggle.textContent = '🌙';
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light-mode');
+    themeToggle.textContent = '🌚';
   }
-
   themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light-mode');
-  const isLight = document.body.classList.contains('light-mode');
-  themeToggle.textContent = isLight ? '🌙' : '☀️';
-  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    document.body.classList.toggle('light-mode');
+    const light = document.body.classList.toggle('light-mode');
+    themeToggle.textContent = light ? '🌚' : '🌙';
+    localStorage.setItem('theme', light ? 'light' : 'dark');
   });
  
   // Menu toggle
