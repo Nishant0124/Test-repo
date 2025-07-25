@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Vanta animated background
-/*  VANTA.NET({
+  VANTA.NET({
     el: "#vanta-bg",
     mouseControls: true,
     touchControls: true,
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scaleMobile: 1.0,
     color: 0x4b2e83,
     backgroundColor: 0x151515
-  });*/
+  });
 });
 
 const faders = document.querySelectorAll('.fade-in');
