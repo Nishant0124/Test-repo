@@ -42,6 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
     size: 3.10,
     spacing: 34.00
   });
+  }
+
+  initVantaWhenReady();
 });
 
 const faders = document.querySelectorAll('.fade-in');
