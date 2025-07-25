@@ -30,7 +30,14 @@ body.light-mode {
   min-height: 100vh;
   width: 100%;
   position: relative;
+  overflow: hidden;
   z-index: 0;
+}
+#vanta-bg canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 #vanta-bg > * {
   position: relative;
